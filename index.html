@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Glitch Automation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1c9144b004.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </head>
+</head>
+<body>
+  <div id="menu-bar">
+    <div class="left" role="menu">
+      <button class="menubar-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
+      <h5>Glitch Automation</h5>
+    </div>
+    <div class="right">
+      <button class="menubar-btn" id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
+      <button class="menubar-btn" id="max-unmax-btn"><i class="far fa-square"></i></button>
+      <button class="menubar-btn" id="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+  <div id ="main" class="container">
+    <div id="sidebar">
+      <div id ="devicePaneTuya" class="container">
+        <table id="tuyaDevices">
+        </table>
+      </div>
+      <div id="tuyaButtonRow">
+        <button id="tuyaOnAll">Turn On All</button>
+        <button id="tuyaOffAll">Turn Off All</button>
+      </div>
+            <div id ="devicePanePcs" class="container">
+        <table id="pcDevices">
+        </table>
+      </div>
+      <div id="pcButtonRow">
+        <button id="pcOnAll">Turn On All</button>
+        <button id="pcOffAll">Turn Off All</button>
+      </div>
+    </div>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+</html>

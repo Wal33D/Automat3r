@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+
+
+}
+html{
+    background: #34475a!important;
+
+}
+#main{width:100%!important;}
+#menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  background: #34475a;
+  -webkit-app-region: drag;
+}
+#menu-bar h5{
+  color:white!important;
+}
+#menu-bar > div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menubar-btn {
+  -webkit-app-region: no-drag;
+}
+
+.container {
+  height: calc(100vh - 30px);
+  background: #34475ab0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+button {
+  height: 100%;
+  padding: 0 15px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+button:hover {
+  background: rgba(221, 221, 221, 0.2);
+}
+
+#close-btn:hover {
+  background: rgb(255, 0, 0);
+}
+
+button i {
+  color: white;
+}
+
+#tuyaButtonRow,#pcButtonRow{
+  background:#34475ab0;
+  padding:0px!important;
+  height:5vh;
+  width:100%;
+  border: 1px solid white;
+  padding: 8px;
+  border-radius:5px;
+  box-shadow: 8px 10px 10px rgba(0,0,0,.35);
+  font-size:12px;
+  margin-top:5px;
+  margin-bottom:5px;
+     align-items: center;
+    justify-content: center;
+}
+#tuyaButtonRow button, #pcButtonRow button{
+  width:49%;
+}
+#devicePaneTuya, #devicePanePcs{
+  border: 1px solid white;
+  padding: 8px;
+  border-radius:5px;
+  box-shadow: 3px 5px 5px rgba(0,0,0,.25);
+  font-size:12px;
+  height: calc(45vh - 50px);
+  width:200px;
+  max-height: 300px;
+  max-width:200px;
+  white-space: nowrap;
+  overflow-y scroll;
+  overflow-x: hidden;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+
+
+
+#tuyaDevices, #pcDevices{
+  padding:150px;
+    margin: auto;
+
+  display: none;
+  width:200px;
+
+}
+
+
+#tuyaDevices img, #tuyaDevices tr,
+#pcDevices img, #pcDevices tr{
+  max-height:18px; 
+  padding:1px;
+}
+
+ #tuyaDevices tr, #pcDevices tr{
+  max-height:22px; 
+  padding:2px;
+  overflow-x: none;
+  overflow-y:none;
+  border-bottom:1px dashed grey;
+
+          cursor: pointer;
+
+}
+
+
+#sidebar{
+  background:#34475a;
+  padding:10px 10px 10px 10px;
+  height: calc(100vh - 30px);
+position: fixed;
+right:0;
+max-width:30vw;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Glitch-Automation",
+  "version": "1.0.0",
+  "description": "Glitch Automation App",
+  "main": "main.js",
+  "icon": "build/icon.ico",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "directories": {
+      "buildResources": "build/icon.ico,savedata/tuyaDevices.json,credentials/tuyaKeys.json,,menu.js, menu-functions.js,preload.js,renderer.js,style.css"
+    },
+    "target": "squirrel",
+    "icon": "build/icon.ico"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^7.1.10",
+    "electron-builder": "^22.7.0"
+  },
+  "dependencies": {
+    "electron-builder-squirrel-windows": "^22.7.0",
+    "electron-packager": "^15.0.0",
+    "jquery": "^3.5.1",
+    "node-run-cmd": "^1.0.1",
+    "puppeteer": "^4.0.1",
+    "puppeteer-extra": "^3.1.9",
+    "puppeteer-extra-plugin": "^3.1.4",
+    "puppeteer-extra-plugin-adblocker": "^2.11.3",
+    "puppeteer-extra-plugin-anonymize-ua": "^2.2.8",
+    "puppeteer-extra-plugin-recaptcha": "^3.1.10",
+    "puppeteer-extra-plugin-stealth": "^2.4.9",
+    "request": "^2.88.2"
+  }
+}
